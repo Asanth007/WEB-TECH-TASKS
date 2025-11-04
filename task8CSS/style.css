@@ -1,0 +1,21 @@
+
+.head{
+  color: cornflowerblue;
+}
+
+p{
+    color: powderblue;
+}
+nav{
+    
+    align-items: center;
+    align-content: space-between;
+    
+
+}
+li{
+    list-style: none;
+    flex-direction: column;
+    color: cornflowerblue;
+    
+}

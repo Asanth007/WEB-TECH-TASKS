@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .transformer {
+        display: flex;
+        border-radius: 10%;
+      }
+      #skew {
+        translate: 10px;
+        height: 200px;
+        width: 200px;
+        background-color: steelblue;
+      }
+      #skew:hover {
+        transform: skewY(45deg);
+        transition: transform 0.5s ease;
+      }
+      #rotate {
+        transform: translateX(80px);
+        height: 200px;
+        width: 200px;
+        background-color: steelblue;
+      }
+      #rotate:hover {
+        transform: rotate(45deg);
+        transition: transform 2s ease-in;
+      }
+      #scale {
+        
+        height: 200px;
+        width: 200px;
+        background-color: steelblue;
+      }
+      #scale:hover {
+        transform: scale(0.9);
+        transition: transform 0.3s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="transformer">
+      <div id="scale"></div>
+      <div id="skew"></div>
+      <div id="rotate"></div>
+    </div>
+  </body>
+</html>
