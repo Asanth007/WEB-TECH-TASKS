@@ -1,0 +1,42 @@
+
+.my-element{
+    --height:0;
+}
+
+
+
+.container{
+            display: grid;
+            height: 1200px;
+            margin: 0;
+            padding: 0;
+            align-items: flex-start;
+        }
+        .box{
+        height: 200px;
+        width: 200px;
+        background-color: aquamarine;
+         animation: bounce 2s ease infinite; 
+            
+    }
+    @keyframes bounce{
+        0%{
+            transform: translateY(var(--height));
+        }
+        50%{
+            transform: translateY(var(--height));
+            background-color: brown;
+        }
+        100%{
+            transform: translateY(var(--height));
+        }
+        
+    }
+    .ledge{
+        height: 20px;
+        width: 200px;
+        background-color: blue;
+        display: flex;
+        border: 1px solid black;
+        
+    }

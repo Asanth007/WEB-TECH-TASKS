@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        display: flex;
+        background-color: black;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 100%;
+    }
+    nav img{
+        height: 80px;
+    }
+    .rides{
+        display: flex;
+        height: 500px;
+        
+        align-items: center;
+    }
+    .imgcontainer{
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 10px;
+        width: 450px;
+        box-shadow: 2.5px 2.5px 2.5px 2.5px grey;
+        border-radius: 20px;
+    }
+    .grid{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+     .field{
+        width: 200px;
+        height: 35px;
+        border-radius: 10px;
+        
+     }
+     button{
+        color: white;
+        background-color: black;
+         width: 200px;
+        height: 35px;
+        
+        border-radius: 10px;
+
+     }
+     img{
+        height: 200px;
+     }
+     .imgs:hover{
+        animation: img-mover 1s ease-in infinite alternate ;
+     }
+     @keyframes img-mover{
+        0%{
+            transform: translateX(20px) skewX(2deg);
+            
+        }
+        50%{
+            transform: translateX(20px) skewX(20deg);
+        }
+        100%{
+            transform: translateX(20px) skewX(20deg);
+        }
+     }
+</style>
+</head>
+
+<body>
+    <nav>
+<img src="https://cdn.mos.cms.futurecdn.net/5ij5qdSHFzJ2piPRuoTL5F.jpg" alt="">
+    </nav>
+    <div class="grid">
+        <div class="rides">
+        <div class="imgcontainer">
+            
+            <img class="imgs" src="https://imgd.aeplcdn.com/370x208/n/cw/ec/15109/splendor-plus-right-side-view-2.png?isig=0&q=80" alt="">
+        
+        
+        <input type="text" id="Bike" class="field" placeholder="Enter KM">
+        <button onclick="Calculator(document.getElementById('Bike').value)">
+            Book Now
+        </button>
+        </div>
+    </div>
+    <div class="rides">
+        <div class="imgcontainer">
+            
+            <img class="imgs" src="https://truckcdn.cardekho.com/in/montra/super-auto/montra-super-auto-16198.jpg" alt="">
+        
+        
+        <input type="text" id="Auto" class="field" placeholder="Enter KM">
+        <button onclick="Calculator(document.getElementById('Auto').value)">
+            Book Now
+        </button>
+        </div>
+    </div>
+    <div class="rides">
+        <div class="imgcontainer">
+            
+            <img class="imgs" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV78mfHV_N-c2wZNvT2GAfqRdWF0cYmqKlzStmFdhDcMFKoApYUXLMtw9a1cqETbR5DRc&usqp=CAU" alt="">
+        
+        
+        <input type="text" id="Car" class="field" placeholder="Enter KM">
+        <button onclick="Calculator(document.getElementById('Bike').value)">
+            Book Now
+        </button>
+
+        </div>
+    </div>
+    </div>
+    <script>
+
+        const Calculator=(x)=>{
+            const Km=x
+            let a=x*30;
+            console.log(a);
+            
+            alert(`For ${x} Km price will be ${a}`)
+        }
+    </script>
+</body>
+</html>
